@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 :root {
-    --primary-color: #cae3ff;
+    --primary-color: #9de787;
     --secondary-color: #6c757d;
+    --dark-green: #449744;
 }
 
 * {
