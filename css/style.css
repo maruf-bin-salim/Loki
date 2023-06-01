@@ -110,8 +110,7 @@ html, body {
 }
 
 .figure img {
-    height: 80%;
-    width: auto;
+    width: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -156,6 +155,11 @@ html, body {
 
     .description-card p {
         font-size: 20px;
+    }
+
+    .figure img {
+        height: 25vh;
+        width: auto;
     }
 
 }
