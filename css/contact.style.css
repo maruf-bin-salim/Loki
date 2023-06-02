@@ -5,6 +5,8 @@
     --secondary-color: #2da32d;
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -20,15 +22,15 @@ html, body {
 
 .main {
     height: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
     background: url('../assets/wave.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--primary-color);
+
 }
+
 
 .nav-bar {
     padding: 30px;
@@ -77,6 +79,7 @@ html, body {
     text-decoration: none;
 }
 
+
 .sections {
     flex: 1;
     overflow-y: scroll;
@@ -91,55 +94,19 @@ html, body {
     scrollbar-width: none;
 }
 
-
-
-.home {
-    flex: 1;
-    padding-left: 30px;
-    display: flex;
+.section {
     height: 100%;
 }
 
-.description-card {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    width: 40%;
-    gap: 20px;
-    padding: 30px;
-    color: white;
-    z-index: 2;
-    margin-top: 20px;
-
-}
-
-.description-card h2 {
-    font-size: 50px;
-}
-
-.description-card p {
-    font-size: 22px;
-}
-
-.figure {
-    flex: 1;
-    position: relative;
-}
-
-.figure img {
-    width: 75%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
 
 .footer {
-    margin-top: 100px;
     height: max-content;
     padding: 30px;
     background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
     color: white;
 }
+
+
 
 /* media queries */
 @media (max-width: 768px) {
@@ -161,30 +128,10 @@ html, body {
         aspect-ratio: 1;
     }
 
-    .home {
-        flex-direction: column;
-    }
 
     .nav-right {
         font-size: x-large;
         gap: 10px;
-    }
-
-    .description-card {
-        width: 100%;
-    }
-
-    .description-card h2 {
-        font-size: 40px;
-    }
-
-    .description-card p {
-        font-size: 20px;
-    }
-
-    .figure img {
-        height: 25vh;
-        width: auto;
     }
 
 }
