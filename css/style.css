@@ -185,6 +185,9 @@ html, body {
     .figure img {
         height: 25vh;
         width: auto;
+        top: 42.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 }
