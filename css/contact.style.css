@@ -171,6 +171,7 @@ W
 
     .contact-right {
         min-height: 60vh;
+        background-size: contain;
         width: 100%;
     }
 
