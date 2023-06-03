@@ -94,18 +94,44 @@ html, body {
     scrollbar-width: none;
 }
 
-.section {
-    height: 100%;
+.contact-section {
+    display: flex;
+    height: max-content;
+    min-height: 100%;
+    color: white;
+    text-shadow: 1px 1px 1px #6d6d6d;
+}
+
+.contact-left {
+    flex: 1;
+    padding: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.contact-us-title {
+    font-size: 50px;
+}
+
+.contact-right {
+    flex: 1;
+    background: url('../assets/contact-us.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
 .footer {
+    margin-top: 100px;
     height: max-content;
     padding: 30px;
     background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
     color: white;
 }
-
 
 
 /* media queries */
@@ -132,6 +158,20 @@ html, body {
     .nav-right {
         font-size: x-large;
         gap: 10px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+    }
+
+    .contact-us-title {
+        font-size: 40px;
+    }
+W
+
+    .contact-right {
+        min-height: 60vh;
+        width: 100%;
     }
 
 }
