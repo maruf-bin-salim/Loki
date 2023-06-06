@@ -116,10 +116,77 @@ html, body {
     font-size: 50px;
 }
 
+.informations {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.information {
+    font-size: 24px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.information:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.information-logo {
+    width: 50px;
+    height: 50px;
+}
+
+.phone {
+    background: url('../assets/call.svg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.email {
+    background: url('../assets/mail.svg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.location {
+    background: url('../assets/location.svg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.information a {
+    color: white;
+    text-decoration: none;
+}
+
+.information-text {
+    font-size: 24px;
+    word-break: break-all;
+}
+
 .contact-right {
     flex: 1;
     background: url('../assets/contact-us.png');
-    background-size: 100%;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -132,7 +199,6 @@ html, body {
     background: linear-gradient(to left, var(--primary-color), var(--secondary-color));
     color: white;
 }
-
 
 /* media queries */
 @media (max-width: 768px) {
@@ -172,6 +238,33 @@ html, body {
         min-height: 60vh;
         background-size: contain;
         width: 100%;
+    }
+
+    .informations {
+        gap: 30px;
+
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .information-text {
+        font-size: 20px;
+    }
+
+    .information {
+        display: grid;
+        grid-template-columns: 40px 1fr;
+    }
+
+    .information:hover {
+        transform: scale(1);
+    }
+
+    .information-logo {
+        width: 40px;
+        height: 40px;
     }
 
 }
